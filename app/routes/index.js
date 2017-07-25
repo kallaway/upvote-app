@@ -19,6 +19,11 @@ module.exports = function (app, passport) {
 		.get(isLoggedIn, function (req, res) {
 			res.sendFile(path + '/public/index.html');
 		});
+		
+	app.route('/polls')
+		.get((req, res) => {
+			res.sendFile(path + '/public/polls.html');
+		});
 
 	app.route('/login')
 		.get(function (req, res) {
