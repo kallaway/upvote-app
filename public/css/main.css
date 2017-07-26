@@ -34,9 +34,20 @@ p {
 	margin: 8px 0 0 0;
 }
 
+.container {
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*flex-direction: column;*/
+	text-align: center;
+}
+
 .container p {
 	text-align: center;
 	padding: 0;
+}
+
+.container button {
+ 	
 }
 
 /****** Header Styling ******/
@@ -99,6 +110,11 @@ header a ~ p {
 
 /****** Logo Div Styling ******/
 
+.logo-icon {
+	color: #FFA000;
+	font-size: 30px;
+}
+
 img {
 	margin: 0 auto;
 	display: block;
@@ -106,9 +122,10 @@ img {
 
 .clementine-text { /* Styling for the Clementine.js text */
 	padding: 0;
-	margin: -25px 0 0 0;
+	/*margin: -25px 0 0 0;*/
+	margin-bottom: 50px;
 	font-weight: 500;
-	font-size: 60px;
+	font-size: 48px;
 	color: #FFA000;
 }
 
