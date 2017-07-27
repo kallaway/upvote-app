@@ -12,20 +12,24 @@
 		<p>|</p>
 		<a class="menu" href="/logout">Logout</a>
 	</header>
+	
 	<body>
 		<div class="container">
 			<i class="fa fa-thumbs-o-up logo-icon" aria-hidden="true"></i>
 			<!--<img src="/public/img/clementine_150.png" />-->
 			<br />
 			<p class="clementine-text">Upvote - Voting App</p>
+			<p>A Voting App created by <a href="">Alexander Kallaway</a></p>
 		</div>
 		
 		<div class="container">
-			<button id="create-new-poll--test">Create New Poll</button>
+			<button class="btn" id="create-new-poll--test">Create New Poll</button>
 		</div>
 		
-		<div id="polls-container" class="container">
+		<div  class="container">
+			<p>Polls will be displayed below</p>
 			<!-- LOAD THE POLL RESULTS HERE -->
+			<div id="polls-container"></div>
 		</div>
 	
 		<div class="container">
@@ -44,7 +48,7 @@
 		<script type="text/javascript" src="common/ajax-functions.js"></script>
 		<script type="text/javascript" src="controllers/clickController.client.js"></script>
 		<script type="text/javascript" src="controllers/userController.client.js"></script>
-		<script type="text/javascript" src="controllers/pollsList.client.js"></script>
+		<script type="text/javascript" src="controllers/pollsListController.client.js"></script>
 		<script src="https://use.fontawesome.com/6ac40a58f1.js"></script>
 	</body>
 

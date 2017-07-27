@@ -34,11 +34,24 @@ p {
 	margin: 8px 0 0 0;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
 	/*display: flex;*/
 	/*justify-content: center;*/
 	/*flex-direction: column;*/
 	text-align: center;
+	width: 90%;
+	background-color: #EEE;
+	margin-bottom: 20px;
+	/*margin-top: 20px;*/
+	border-radius: 5px;
+	padding: 5px;
 }
 
 .container p {

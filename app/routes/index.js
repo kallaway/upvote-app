@@ -20,9 +20,15 @@ module.exports = function (app, passport) {
 			res.sendFile(path + '/public/index.html');
 		});
 		
-	app.route('/polls')
+	app.route('/polls/:pollID')
 		.get((req, res) => {
 			res.sendFile(path + '/public/polls.html');
+		});
+		
+	app.route('/api/polls-all')
+		.get((req, res) => {
+			// read all polls from database - 
+			res.send({});
 		});
 
 	app.route('/login')
