@@ -4,4 +4,6 @@
     
     var pollsContainer = document.getElementById('polls-container');
     
+    
+    
 })();

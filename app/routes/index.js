@@ -14,6 +14,11 @@ module.exports = function (app, passport) {
 	}
 
 	var clickHandler = new ClickHandler();
+	
+	app.route('/new')
+		.get((req, res) => {
+			res.sendFile(path + '/public/new.html')
+		});
 
 	app.route('/')
 		.get(isLoggedIn, function (req, res) {
@@ -24,6 +29,8 @@ module.exports = function (app, passport) {
 		.get((req, res) => {
 			res.sendFile(path + '/public/polls.html');
 		});
+		
+	
 		
 	app.route('/api/polls-all')
 		.get((req, res) => {
